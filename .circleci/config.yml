@@ -22,6 +22,8 @@ jobs:
 
     steps:
       - checkout
+      - run: brew install shellcheck
+      - run: brew link shellcheck
       - run: brew outdated shellcheck || brew upgrade shellcheck
       - run: shellcheck seed-workstation.sh -e SC2039
       - run: ls -l /usr/local/bin/circleci
