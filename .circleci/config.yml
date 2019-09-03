@@ -4,12 +4,12 @@ references:
   restore_homebrew_cache: &restore_homebrew_cache
     restore_cache:
       keys:
-        - v1-homebrew-cache-{{ arch }}-{{ .Branch }}-{{ checksum "/usr/local/Homebrew/.git/GITHUB_HEADERS" }}
-        - v1-homebrew-cache-{{ arch }}-{{ .Branch }}
-        - v1-homebrew-cache-{{ arch }}
+        - v2-homebrew-cache-{{ arch }}-{{ .Branch }}-{{ checksum "/usr/local/Homebrew/.git/GITHUB_HEADERS" }}
+        - v2-homebrew-cache-{{ arch }}-{{ .Branch }}
+        - v2-homebrew-cache-{{ arch }}
   save_homebrew_cache: &save_homebrew_cache
     save_cache:
-      key: v1-homebrew-cache-{{ arch }}-{{ .Branch }}-{{ checksum "/usr/local/Homebrew/.git/GITHUB_HEADERS" }}
+      key: v2-homebrew-cache-{{ arch }}-{{ .Branch }}-{{ checksum "/usr/local/Homebrew/.git/GITHUB_HEADERS" }}
       paths:
         - /usr/local/Cellar
         - /usr/local/Homebrew
@@ -24,7 +24,7 @@ jobs:
       - checkout
       - *restore_homebrew_cache
       - run: brew update
-      - run: brew install shellcheck || brew outdated shellcheck || brew upgrade shellcheck
+      - run: brew outdated shellcheck || brew upgrade shellcheck
       - *save_homebrew_cache
       - run: shellcheck seed-workstation.sh -e SC2039
       - run: ls -l /usr/local/bin/circleci
