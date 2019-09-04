@@ -1,0 +1,6 @@
+require "erb"
+
+file "seed-workstation.sh" => [__FILE__, "seed-workstation.sh.erb"] do
+    template = ERB.new(File.read("seed-workstation.sh.erb"))
+    File.open("seed-workstation.sh", "w") { |f| f.write template.result(binding) }
+end
