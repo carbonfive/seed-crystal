@@ -73,7 +73,7 @@ An opinionated workstation configuration tool -- go from zero to productive
 
 ## Productivity
 
-- [Caffeine](http://lightheadsw.com/caffeine/) - Prevent your Mac from falling asleep
+- [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake/) - Prevent your Mac from falling asleep
 - [Divvy](https://mizage.com/divvy/) - Window management
 - [Flycut](https://github.com/TermiT/Flycut) - Clipboard manager
 - [Muzzle](https://muzzleapp.com) - Silence notifications when screensharing
