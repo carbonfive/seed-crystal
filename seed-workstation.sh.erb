@@ -6,5 +6,5 @@
 
 brew update
 brew bundle --file=- <<EOT
-<%= `cat Brewfile` %>
+<%= view_data.brewfile %>
 EOT
