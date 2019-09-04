@@ -9,5 +9,21 @@ brew bundle --file=- <<EOT
 <%= view_data.brewfile %>
 EOT
 
+echo "Adding /usr/local/bin/zsh to /etc/shells"
 grep -q /usr/local/bin/zsh /etc/shells || sudo sh -c "echo /usr/local/bin/zsh >> /etc/shells"
+
 chsh -s /usr/local/bin/zsh
+
+sh -c "$(curl -L http://install.ohmyz.sh)"
+sed -i '' 's/plugins=.*/plugins=(brew git rbenv gem rake bundler node npm heroku postgres redis-cli)/' ~/.zshrc
+
+createuser -s postgres
+
+<% view_data.vsc_extensions.each do |ext| %>
+<%= "/Applications/Visual\\ Studio\\ Code.app/Contents/Resources/app/bin/code --install-extension #{ext}" %>
+<% end %>
+
+open /Applications/KeepingYouAwake.app
+open /Applications/Divvy.app
+open /Applications/Flycut.app
+open /Applications/Muzzle.app
