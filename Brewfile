@@ -61,6 +61,5 @@ cask "visual-studio-code"
 cask "muzzle"
 # Android IDE
 cask "android-studio"
-# Scan, monitor and troubleshoot wireless networks
-cask "wifi-explorer"
+# Remind yourself to take a break
 cask "time-out"
