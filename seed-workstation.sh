@@ -69,9 +69,9 @@ cask "visual-studio-code"
 cask "muzzle"
 # Android IDE
 cask "android-studio"
-# Scan, monitor and troubleshoot wireless networks
-cask "wifi-explorer"
+# Remind yourself to take a break
 cask "time-out"
 EOT
 
+grep -q /usr/local/bin/zsh /etc/shells || sudo sh -c "echo /usr/local/bin/zsh >> /etc/shells"
 chsh -s /usr/local/bin/zsh
