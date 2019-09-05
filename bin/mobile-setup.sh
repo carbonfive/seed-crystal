@@ -14,6 +14,7 @@ brew bundle --file=Brewfile.mobile
 add_line_to_file 'export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"' ~/.bash_profile
 # shellcheck disable=SC2016
 add_line_to_file 'export ANDROID_HOME="$HOME/Library/Android/sdk"' ~/.bash_profile
+# https://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/
 # shellcheck disable=SC2016
 add_line_to_file 'export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)' ~/.bash_profile
 # shellcheck disable=SC2016
