@@ -29,4 +29,6 @@ jobs:
       - *save_homebrew_cache
       - run: rake test
       - run: rm -f /usr/local/bin/circleci
+      - run: echo "export CHSH=no" >> $BASH_ENV
+      - run: source $BASH_ENV
       - run: sh -x bootstrap.sh
