@@ -10,6 +10,23 @@ An opinionated workstation configuration tool -- From zero to productive
 /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/carbonfive/seed-crystal/master/bootstrap.sh)"
 ```
 
+## Updates
+
+```sh
+cd ~/Documents/seed-crystal
+git pull
+sh bin/workstation-setup.sh
+```
+
+## Opt-ins
+
+The base install is just enough to get you productive without too much ceremony, but what if you want to mobile work?
+
+```sh
+cd ~/Documents/seed-crystal
+sh bin/mobile-setup.sh
+```
+
 ## Core Values
 
 1. Standard toolsets make it easier for contributors to roll onto a project. What you do on your personal projects is your business, but we are in the business of delivering value to our clients. There shall be no `vim`/`emacs` wars.
@@ -22,6 +39,8 @@ An opinionated workstation configuration tool -- From zero to productive
 
 5. Document rationale if at all possible. Document in `code` if at all possible.
 
+6. Idempotent. At least non-destructive.
+
 ## Realities
 
 - This script is probably run once per project _at best_. Worst case, it is done on your first day at work, and not again until your hardware is repurposed for someone else.
@@ -29,11 +48,6 @@ An opinionated workstation configuration tool -- From zero to productive
 - It's hard to test perfectly: Wipe the laptop. Reinstall the OS. Run the script.
 
 - Our world is broken up into somewhat orthogonal core competencies: RoR, React, Mobile, Elixir, Go. No one person will be an expert on all of these toolchains. Provide low-ceremony, low friction tools to help the experts decide what's important.
-
-## Testing
-
-- `brew install shellcheck`
-- `rake` or `rake test`
 
 ## Tooling
 
@@ -68,6 +82,11 @@ An opinionated workstation configuration tool -- From zero to productive
 ## Seed::Crystal Development
 
 After checking out the repo, run `bin/setup` to install dependencies.
+
+## Testing
+
+- `bin/setup`
+- `rake test`
 
 ## Contributing
 
