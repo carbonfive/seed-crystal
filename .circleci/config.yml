@@ -14,6 +14,16 @@ references:
         - /usr/local/Homebrew
         - ~/Library/Logs/Homebrew
 
+commands:
+  homebrew:
+    steps:
+      - *restore_homebrew_cache
+      - run: brew update
+      - run: brew install shellcheck
+      - run: brew link shellcheck
+      - run: brew outdated shellcheck || brew upgrade shellcheck
+      - *save_homebrew_cache
+
 jobs:
   build:
     macos:
@@ -21,14 +31,10 @@ jobs:
 
     steps:
       - checkout
-      - *restore_homebrew_cache
-      - run: brew update
-      - run: brew install shellcheck
-      - run: brew link shellcheck
-      - run: brew outdated shellcheck || brew upgrade shellcheck
-      - *save_homebrew_cache
+      - homebrew
       - run: rake test
       - run: rm -f /usr/local/bin/circleci
       - run: echo "export CHSH=no" >> $BASH_ENV
       - run: source $BASH_ENV
       - run: sh -x bootstrap.sh
+      - run: sh -x bin/mobile-setup.sh
