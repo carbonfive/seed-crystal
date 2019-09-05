@@ -26,6 +26,8 @@ setup_color() {
     fi
 }
 
+setup_color
+
 # Prevent the cloned repository from having insecure permissions. Failing to do
 # so causes compinit() calls to fail with "command not found: compdef" errors
 # for users with insecure umasks (e.g., "002", allowing group writability). Note

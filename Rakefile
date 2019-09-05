@@ -40,7 +40,7 @@ file "bin/workstation-setup.sh" => [__FILE__, "src/workstation-setup.sh.erb"] do
     waderyan.gitblame
     xabikos.ReactSnippets
   ]
-  erb = ERB.new(File.read("src/workstation-setup.sh.erb"))
+  erb = ERB.new(File.read("src/workstation-setup.sh.erb"), $SAFE, "-")
   File.open(t.name, "w") { |f| f.write erb.result(binding) }
 end
 
