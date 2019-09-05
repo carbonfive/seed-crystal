@@ -1,3 +1,5 @@
+#!/bin/sh
+
 command_exists() {
 	command -v "$@" >/dev/null 2>&1
 }
@@ -39,15 +41,15 @@ add_line_to_file() {
   line=$1
   file=$2
 
-  [ -f $file ] || touch $file
+  [ -f "$file" ] || touch "$file"
 
-  if grep --fixed-strings --line-regexp --quiet "$line" $file
+  if grep --fixed-strings --line-regexp --quiet "$line" "$file"
   then
     warn "SKIPPING: '$line' already exists in '$file'"
   else
     announce "Adding '$line' to '$file'"
 
-    echo "$line" >> $file
+    echo "$line" >> "$file"
   fi
 }
 
