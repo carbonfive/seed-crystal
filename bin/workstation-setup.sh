@@ -2,47 +2,11 @@
 
 set -e
 
-command_exists() {
-	command -v "$@" >/dev/null 2>&1
-}
-
-error() {
-    echo "${RED}""Error: $*""${RESET}" >&2
-}
-
-warn() {
-    echo "${YELLOW}""$*""${RESET}" >&2
-}
-
-announce() {
-    echo "${BLUE}""$*""${RESET}" >&2
-}
-
-success() {
-    echo "${GREEN}""$*""${RESET}" >&2
-}
-setup_color() {
-	# Only use colors if connected to a terminal
-	if [ -t 1 ]; then
-		RED=$(printf '\033[31m')
-		GREEN=$(printf '\033[32m')
-		YELLOW=$(printf '\033[33m')
-		BLUE=$(printf '\033[34m')
-		RESET=$(printf '\033[m')
-	else
-		RED=""
-		GREEN=""
-		YELLOW=""
-		BLUE=""
-		RESET=""
-	fi
-}
+source "bin/library.sh"
 
 setup_color
 
-warn Caching root password...
-sudo -K
-sudo true;
+cache_root_password
 
 command_exists brew || {
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -51,6 +15,11 @@ command_exists brew || {
 announce Workstation setup...
 brew update
 brew bundle
+
+# shellcheck disable=SC2016
+add_line_to_file 'eval "$(rbenv init -)"' ~/.bash_profile
+# shellcheck disable=SC2016
+add_line_to_file 'eval "$(nodenv init -)"' ~/.bash_profile
 
 announce Postgres...
 createuser -s postgres
@@ -98,7 +67,9 @@ open /Applications/Divvy.app
 open /Applications/Flycut.app
 open /Applications/Muzzle.app
 
+announce Installing Oh My zsh
 RUNZSH=no sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sed -i '' 's/plugins=.*/plugins=(brew git rbenv gem rake bundler node npm heroku postgres redis-cli)/' ~/.zshrc
 
 success All done.
+warn You should probably reboot your machine to make sure that everything is set up.
