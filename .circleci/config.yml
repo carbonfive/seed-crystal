@@ -27,7 +27,6 @@ jobs:
       - run: brew link shellcheck
       - run: brew outdated shellcheck || brew upgrade shellcheck
       - *save_homebrew_cache
-      - run: shellcheck seed-workstation.sh -e SC2039
-      - run: ls -l /usr/local/bin/circleci
-      - run: rm /usr/local/bin/circleci
-      - run: sh seed-workstation.sh
+      - run: rake test
+      - run: rm -f /usr/local/bin/circleci
+      - run: sh -x bootstrap.sh

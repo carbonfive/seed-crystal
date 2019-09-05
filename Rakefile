@@ -4,7 +4,7 @@ ViewData = Struct.new(:brewfile, :vsc_extensions)
 
 task :default => :test
 
-file "seed-workstation.sh" => [__FILE__, "seed-workstation.sh.erb"] do
+file "bin/workstation-setup.sh" => [__FILE__, "src/workstation-setup.sh.erb"] do |t|
   view_data = ViewData.new
   view_data.brewfile = File.read("Brewfile")
   view_data.vsc_extensions = %w[
@@ -40,10 +40,10 @@ file "seed-workstation.sh" => [__FILE__, "seed-workstation.sh.erb"] do
     waderyan.gitblame
     xabikos.ReactSnippets
   ]
-  erb = ERB.new(File.read("seed-workstation.sh.erb"))
-  File.open("seed-workstation.sh", "w") { |f| f.write erb.result(binding) }
+  erb = ERB.new(File.read("src/workstation-setup.sh.erb"))
+  File.open(t.name, "w") { |f| f.write erb.result(binding) }
 end
 
-task :test => "seed-workstation.sh" do
-  sh "shellcheck seed-workstation.sh -e SC2039"
+task :test => ["bootstrap.sh", "bin/workstation-setup.sh"] do |t|
+  sh "shellcheck #{t.prerequisites.join(' ')} -e SC2039"
 end
