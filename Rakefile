@@ -19,6 +19,7 @@ file "README.md" => [__FILE__, "src/README.md.erb", "Brewfile"] do |t|
   File.open(t.name, "w") { |f| f.write erb.result(binding) }
 end
 
-task :test => ["bootstrap.sh", "bin/workstation-setup.sh", "README.md"] do |t|
-  sh "shellcheck #{["bootstrap.sh", "bin/workstation-setup.sh"].join(' ')} -e SC2039"
+task :test => ["bootstrap.sh", "bin/workstation-setup.sh", "README.md", ".circleci/config.yml"] do |t|
+  sh "shellcheck -x #{["bootstrap.sh", "bin/workstation-setup.sh"].join(' ')} -e SC2039"
+  sh "circleci config validate"
 end
