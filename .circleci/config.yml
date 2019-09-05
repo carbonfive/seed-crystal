@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 
 references:
   restore_homebrew_cache: &restore_homebrew_cache
@@ -14,16 +14,6 @@ references:
         - /usr/local/Homebrew
         - ~/Library/Logs/Homebrew
 
-commands:
-  refresh_homebrew:
-    steps:
-      - *restore_homebrew_cache
-      - run: brew update
-      - run: brew install shellcheck
-      - run: brew link shellcheck
-      - run: brew outdated shellcheck || brew upgrade shellcheck
-      - *save_homebrew_cache
-
 jobs:
   test:
     macos:
@@ -31,7 +21,12 @@ jobs:
 
     steps:
       - checkout
-      - refresh_homebrew
+      - *restore_homebrew_cache
+      - run: brew update
+      - run: brew install shellcheck
+      - run: brew link shellcheck
+      - run: brew outdated shellcheck || brew upgrade shellcheck
+      - *save_homebrew_cache
       - run: rake test
       - run: rm -f /usr/local/bin/circleci
       - run: echo "export CHSH=no" >> $BASH_ENV
