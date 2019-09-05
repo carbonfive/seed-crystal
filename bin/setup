@@ -1,0 +1,5 @@
+#!/bin/sh
+
+brew install shellcheck > /dev/null 2>&1
+brew link shellcheck > /dev/null 2>&1
+brew outdated shellcheck || brew upgrade shellcheck
