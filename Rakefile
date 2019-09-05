@@ -1,12 +1,11 @@
 require "erb"
 
-ViewData = Struct.new(:brewfile, :vsc_extensions)
+ViewData = Struct.new(:vsc_extensions, :homebrew_packages)
 
 task :default => :test
 
 file "bin/workstation-setup.sh" => [__FILE__, "src/workstation-setup.sh.erb"] do |t|
   view_data = ViewData.new
-  view_data.brewfile = File.read("Brewfile")
   view_data.vsc_extensions = %w[
     aaron-bond.better-comments
     bajdzis.vscode-database
@@ -41,6 +40,13 @@ file "bin/workstation-setup.sh" => [__FILE__, "src/workstation-setup.sh.erb"] do
     xabikos.ReactSnippets
   ]
   erb = ERB.new(File.read("src/workstation-setup.sh.erb"), $SAFE, "-")
+  File.open(t.name, "w") { |f| f.write erb.result(binding) }
+end
+
+file "README.md" => [__FILE__, "src/README.md.erb", "Brewfile"] do |t|
+  view_data = ViewData.new
+  view_data.homebrew_packages = `grep '#- ' Brewfile | sed -e 's/^#//' | sort -fb`
+  erb = ERB.new(File.read("src/README.md.erb"), $SAFE, "-")
   File.open(t.name, "w") { |f| f.write erb.result(binding) }
 end
 

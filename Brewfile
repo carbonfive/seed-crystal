@@ -4,11 +4,13 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 
-# Enables you to reproduce the CircleCI environment locally
+# self-documenting... Lines that begin with `#-` will be injected into the README.md file
+
+#- [CircleCI](https://circleci.com) - Enables you to reproduce the CircleCI environment locally
 brew "circleci"
 # Distributed revision control system
 brew "git"
-# Add GitHub support to git on the command-line
+#- [Hub](https://github.com/github/hub) - Add GitHub support to git on the command-line
 brew "hub"
 # Command-line JSON pretty-printer
 brew "jsonpp"
@@ -16,7 +18,7 @@ brew "jsonpp"
 brew "node-build"
 # Manage multiple NodeJS versions
 brew "nodenv"
-# Object-relational database system
+#- [postgresql](https://postgresql.org) - Object-relational database system
 brew "postgresql", restart_service: :changed
 # Interpreted, interactive, object-oriented programming language
 brew "python"
@@ -24,30 +26,30 @@ brew "python"
 brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
-# Persistent key-value database, with built-in net interface
+#- [redis](https://redis.org) - Persistent key-value database, with built-in net interface
 brew "redis", restart_service: :changed
-# JavaScript package manager
+#- [yarn](https://yarnpkg.com) - JavaScript package manager
 brew "yarn"
-# UNIX shell (command interpreter)
+#- [zsh](https://zsh.sourceforge.net) - UNIX shell (command interpreter)
 brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
-# Yet Another Dotfiles Manager
+#- [Yet Another Dotfiles Manager](https://yadm.io)
 brew "yadm"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 
-# Docker Community Edition (app)
+#- [Docker](https://docker.com) - Docker Community Edition (.app)
 cask "docker"
-# AdoptOpenJDK 8 -- Open source replace for Java8 (for Android)
+#- [AdoptOpenJDK 8](https://openjdk.java.net/projects/jdk8/) - Open source replace for Java8 (for Android)
 cask "caskroom/versions/adoptopenjdk8"
-# Prevents your Mac from going to sleep.
+#- [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake/) - Prevents your Mac from going to sleep.
 cask "keepingyouawake"
-# Window manager
+#- [Divvy](https://mizage.com/divvy/) - Window manager
 cask "divvy"
-# Clipboard manager
+#- [Flycut](https://github.com/TermiT/Flycut) - Clipboard manager
 cask "flycut"
 # Chrome
 cask "google-chrome"
@@ -55,13 +57,13 @@ cask "google-chrome"
 cask "firefox"
 # Atom
 cask "atom"
-# Visual Studio Code
+# [Visual Studio Code](https://code.visualstudio.com) - -Integrated development environment for many languages and platforms with many plugins
 cask "visual-studio-code"
-# Silence notifications when screen sharing
+#- [Muzzle](https://muzzleapp.com) - -Silence notifications when screen sharing
 cask "muzzle"
 # Android IDE
 cask "android-studio"
-# Remind yourself to take a break
+#- [Time Out](https://www.dejal.com/timeout/) - Remind yourself to take a break
 cask "time-out"
 # Our corporate notebook of memories
 cask "notion"
