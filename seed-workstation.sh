@@ -147,9 +147,5 @@ open /Applications/Muzzle.app
 echo "Adding /usr/local/bin/zsh to /etc/shells"
 grep -q /usr/local/bin/zsh /etc/shells || sudo sh -c "echo /usr/local/bin/zsh >> /etc/shells"
 
-if [ "x$CIRCLECI" == "x" ]
-then
-  chsh -s /usr/local/bin/zsh
-fi
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sed -i '' 's/plugins=.*/plugins=(brew git rbenv gem rake bundler node npm heroku postgres redis-cli)/' ~/.zshrc

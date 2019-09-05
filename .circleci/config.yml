@@ -4,12 +4,11 @@ references:
   restore_homebrew_cache: &restore_homebrew_cache
     restore_cache:
       keys:
-        - v3-homebrew-cache-{{ arch }}-{{ .Branch }}-{{ checksum "/usr/local/Homebrew/.git/GITHUB_HEADERS" }}
         - v3-homebrew-cache-{{ arch }}-{{ .Branch }}
         - v3-homebrew-cache-{{ arch }}
   save_homebrew_cache: &save_homebrew_cache
     save_cache:
-      key: v3-homebrew-cache-{{ arch }}-{{ .Branch }}-{{ checksum "/usr/local/Homebrew/.git/GITHUB_HEADERS" }}
+      key: v3-homebrew-cache-{{ arch }}-{{ .Branch }}
       paths:
         - /usr/local/Cellar
         - /usr/local/Homebrew
