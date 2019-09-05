@@ -63,3 +63,5 @@ cask "muzzle"
 cask "android-studio"
 # Remind yourself to take a break
 cask "time-out"
+# Our corporate notebook of memories
+cask "notion"
