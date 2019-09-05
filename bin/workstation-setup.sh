@@ -22,7 +22,7 @@ add_line_to_file 'eval "$(rbenv init -)"' ~/.bash_profile
 add_line_to_file 'eval "$(nodenv init -)"' ~/.bash_profile
 
 announce Postgres...
-createuser -s postgres
+createuser -s postgres || true
 
 announce Visual Studio Code extensions...
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension aaron-bond.better-comments
