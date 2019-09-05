@@ -7,7 +7,7 @@ An opinionated workstation configuration tool -- From zero to productive
 ## Installation
 
 ```sh
-/bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/carbonfive/seed-crystal/master/seed-workstation.sh)"
+/bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/carbonfive/seed-crystal/master/bootstrap.sh)"
 ```
 
 ## Core Values
