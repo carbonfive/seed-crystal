@@ -50,7 +50,7 @@ add_line_to_file() {
   fi
 }
 
-cache_root_password {
+cache_root_password() {
     warn Caching root password...
     sudo -K
     sudo true;
