@@ -27,7 +27,7 @@ An opinionated workstation configuration tool -- go from zero to productive
 
 - It's hard to test perfectly: Wipe the laptop. Reinstall the OS. Run the script.
 
-- Our world is broken up into smaller core competencies: RoR, React, Mobile, Elixir, Go. No one person will be an expert on all of these toolchains. Provide low-ceremony, low friction tools to help the experts decide what's important.
+- Our world is broken up into somewhat orthogonal core competencies: RoR, React, Mobile, Elixir, Go. No one person will be an expert on all of these toolchains. Provide low-ceremony, low friction tools to help the experts decide what's important.
 
 ## Testing
 
@@ -95,3 +95,10 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 Everyone interacting in the Seed::Crystal project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/carbonfive/seed-crystal/blob/master/CODE_OF_CONDUCT.md).
 
+## Inspirations
+
+- https://github.com/thoughtbot/laptop
+- https://github.com/pivotal/workstation-setup
+- https://github.com/pivotal-sprout/sprout-wrap
+- https://github.com/splith/macOS
+- ... and many many others ...
