@@ -15,7 +15,7 @@ references:
         - ~/Library/Logs/Homebrew
 
 commands:
-  homebrew:
+  refresh_homebrew:
     steps:
       - *restore_homebrew_cache
       - run: brew update
@@ -25,16 +25,22 @@ commands:
       - *save_homebrew_cache
 
 jobs:
-  build:
+  test:
     macos:
       xcode: "8.3.3"
 
     steps:
       - checkout
-      - homebrew
+      - refresh_homebrew
       - run: rake test
       - run: rm -f /usr/local/bin/circleci
       - run: echo "export CHSH=no" >> $BASH_ENV
       - run: source $BASH_ENV
       - run: sh -x bootstrap.sh
       - run: sh -x bin/mobile-setup.sh
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test

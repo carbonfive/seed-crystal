@@ -39,12 +39,13 @@ add_line_to_file() {
   line=$1
   file=$2
 
-  echo
+  [ -f $file ] || touch $file
+
   if grep --fixed-strings --line-regexp --quiet "$line" $file
   then
-    echo "SKIPPING: '$line' already exists in '$file'"
+    warn "SKIPPING: '$line' already exists in '$file'"
   else
-    echo "Adding '$line' to '$file'"
+    announce "Adding '$line' to '$file'"
 
     echo "$line" >> $file
   fi
