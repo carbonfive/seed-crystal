@@ -1,12 +1,13 @@
-# seed-crystal
+# Seed::Crystal
 
-An opinionated workstation configuration tool -- go from zero to productive
+An opinionated workstation configuration tool -- From zero to productive
+
+[![CircleCI](https://circleci.com/gh/carbonfive/seed-crystal/tree/master.svg?style=svg)](https://circleci.com/gh/carbonfive/seed-crystal/tree/master)
 
 ## Installation
 
 ```sh
 /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/carbonfive/seed-crystal/master/seed-workstation.sh)"
-
 ```
 
 ## Core Values
@@ -39,7 +40,6 @@ An opinionated workstation configuration tool -- go from zero to productive
 ### Core
 
 - [Homebrew](https://brew.sh) - macOS package manager
-- [AdoptOpenJDK 8](https://openjdk.java.net/projects/jdk8/) - Open source replace for Java8 (for Android)
 - [CircleCI](https://circleci.com) - Enables you to reproduce the CircleCI environment locally
 - [Divvy](https://mizage.com/divvy/) - Window manager
 - [Docker](https://docker.com) - Docker Community Edition (.app)
@@ -47,8 +47,10 @@ An opinionated workstation configuration tool -- go from zero to productive
 - [Hub](https://github.com/github/hub) - Add GitHub support to git on the command-line
 - [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake/) - Prevents your Mac from going to sleep.
 - [Muzzle](https://muzzleapp.com) - -Silence notifications when screen sharing
+- [Notion](https://www.notion.so/product) Our corporate notebook of memories
 - [postgresql](https://postgresql.org) - Object-relational database system
 - [redis](https://redis.org) - Persistent key-value database, with built-in net interface
+- [Slack](https://slack.com) - Chit chat on the internets
 - [Time Out](https://www.dejal.com/timeout/) - Remind yourself to take a break
 - [yarn](https://yarnpkg.com) - JavaScript package manager
 - [Yet Another Dotfiles Manager](https://yadm.io)
@@ -57,22 +59,13 @@ An opinionated workstation configuration tool -- go from zero to productive
 
 ### Mobile
 
+- [AdoptOpenJDK 8](https://openjdk.java.net/projects/jdk8/) - Open source replace for Java8 (for Android)
 - [Android Studio](https://developer.android.com/studio) - Android's IDE, built on the Eclipse IDE
-- [appium](https://appium.io) - Mobile platform test automation framework. "Capybara, but for phones"
-- [OpenJDK8](https://openjdk.java.net/projects/jdk8/) - Required by Android, abandoned by Oracle
-- [React Native](https://facebook.github.io/react-native/) Native apps for Android and iOS using React
-- [swift](https://developer.apple.com/swift/) - Apple's purpose built language for iOS development
-- [xcode](https://developer.apple.com/xcode/) - Apple's IDE for macOS and iOS
 
-### Web
 
-- [Jest](https://jestjs.io) - JavaScript testing (~~~jasmine~~~)
-- [Phoenix on Elixir](https://phoenixframework.org/) - Web framework built on Elixir
-- [ReactJS](https://reactjs.org) - User interface framework
-- [RSpec](https://rspec.info) - Ruby testing
-- [Ruby on Rails](https://rubyonrails.org) - Web framework built on Ruby
+---
 
-## Development
+## Seed::Crystal Development
 
 After checking out the repo, run `bin/setup` to install dependencies.
 
@@ -94,4 +87,5 @@ Everyone interacting in the Seed::Crystal project’s codebases, issue trackers,
 - https://github.com/pivotal/workstation-setup
 - https://github.com/pivotal-sprout/sprout-wrap
 - https://github.com/splith/macOS
+- https://github.com/robbyrussell/oh-my-zsh
 - ... and many many others ...

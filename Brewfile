@@ -43,8 +43,6 @@ brew "watch"
 
 #- [Docker](https://docker.com) - Docker Community Edition (.app)
 cask "docker"
-#- [AdoptOpenJDK 8](https://openjdk.java.net/projects/jdk8/) - Open source replace for Java8 (for Android)
-cask "caskroom/versions/adoptopenjdk8"
 #- [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake/) - Prevents your Mac from going to sleep.
 cask "keepingyouawake"
 #- [Divvy](https://mizage.com/divvy/) - Window manager
@@ -61,9 +59,9 @@ cask "atom"
 cask "visual-studio-code"
 #- [Muzzle](https://muzzleapp.com) - -Silence notifications when screen sharing
 cask "muzzle"
-# Android IDE
-cask "android-studio"
 #- [Time Out](https://www.dejal.com/timeout/) - Remind yourself to take a break
 cask "time-out"
-# Our corporate notebook of memories
+#- [Notion](https://www.notion.so/product) Our corporate notebook of memories
 cask "notion"
+#- [Slack](https://slack.com) - Chit chat on the internets
+cask "slack"

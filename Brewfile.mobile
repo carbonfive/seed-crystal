@@ -1,0 +1,6 @@
+# self-documenting... Lines that begin with `#-` will be injected into the README.md file
+
+#- [AdoptOpenJDK 8](https://openjdk.java.net/projects/jdk8/) - Open source replace for Java8 (for Android)
+cask "caskroom/versions/adoptopenjdk8"
+#- [Android Studio](https://developer.android.com/studio) - Android's IDE, built on the Eclipse IDE
+cask "android-studio"
