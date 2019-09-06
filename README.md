@@ -20,7 +20,7 @@ sh bin/workstation-setup.sh
 
 ## Opt-ins
 
-The base install is just enough to get you productive without too much ceremony, but what if you want to mobile work?
+The base install is just enough to get you productive without too much ceremony, but what if you want to do mobile work?
 
 ```sh
 cd ~/Documents/seed-crystal
