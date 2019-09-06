@@ -1,0 +1,5 @@
+#- [Sketch](https://www.sketchapp.com/) - Visual design tool
+cask "sketch"
+
+#- [Adobe Create Cloud](https://creative.adobe.com/products/creative-cloud) - Download & installer for ACC
+cask "adobe-creative-cloud"

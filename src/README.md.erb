@@ -54,17 +54,23 @@ sh bin/mobile-setup.sh
 ### Core
 
 - [Homebrew](https://brew.sh) - macOS package manager
-<%= view_data.homebrew_packages %>
+<%= view_data.homebrew_packages -%>
 
 ### Mobile
 
-<%= view_data.mobile_packages %>
+<%= view_data.mobile_packages -%>
+
+### Design
+
+<%= view_data.design_packages -%>
 
 ---
 
 ## Seed::Crystal Development
 
 After checking out the repo, run `bin/setup` to install dependencies.
+
+Many cask formulae can be found here: https://formulae.brew.sh/cask/
 
 ## Testing
 

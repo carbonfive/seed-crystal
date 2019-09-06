@@ -70,18 +70,23 @@ sh bin/mobile-setup.sh
 - [Yet Another Dotfiles Manager](https://yadm.io)
 - [zsh](https://zsh.sourceforge.net) - UNIX shell (command interpreter)
 
-
 ### Mobile
 
 - [AdoptOpenJDK 8](https://openjdk.java.net/projects/jdk8/) - Open source replace for Java8 (for Android)
 - [Android Studio](https://developer.android.com/studio) - Android's IDE, built on the Eclipse IDE
 
+### Design
+
+- [Adobe Create Cloud](https://creative.adobe.com/products/creative-cloud) - Download & installer for ACC
+- [Sketch](https://www.sketchapp.com/) - Visual design tool
 
 ---
 
 ## Seed::Crystal Development
 
 After checking out the repo, run `bin/setup` to install dependencies.
+
+Many cask formulae can be found here: https://formulae.brew.sh/cask/
 
 ## Testing
 
