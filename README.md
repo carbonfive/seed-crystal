@@ -20,11 +20,22 @@ sh bin/workstation-setup.sh
 
 ## Opt-ins
 
-The base install is just enough to get you productive without too much ceremony, but what if you want to do mobile work?
+The base install is just enough to get you productive without too much ceremony, but what if you want to do mobile work? Or design work?
 
 ```sh
 cd ~/Documents/seed-crystal
 sh bin/mobile-setup.sh
+sh bin/design-setup.sh
+```
+
+## Software Updates
+
+Keeping your tools up-to-date is an every growing time suck. Not any more.
+
+```sh
+cd ~/Documents/seed-crystal
+brew bundle check --verbose
+brew bundle
 ```
 
 ## Core Values
@@ -59,7 +70,9 @@ sh bin/mobile-setup.sh
 - [Docker](https://docker.com) - Docker Community Edition (.app)
 - [Flycut](https://github.com/TermiT/Flycut) - Clipboard manager
 - [Hub](https://github.com/github/hub) - Add GitHub support to git on the command-line
+- [JetBrains Toolbox](https://www.jetbrains.com/toolbox/app/) - One stop shopping for the best IDEs
 - [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake/) - Prevents your Mac from going to sleep.
+- [mas](https://github.com/mas-cli/mas) Mac App Store command line interface
 - [Muzzle](https://muzzleapp.com) - -Silence notifications when screen sharing
 - [Notion](https://www.notion.so/product) Our corporate notebook of memories
 - [postgresql](https://postgresql.org) - Object-relational database system
@@ -79,6 +92,7 @@ sh bin/mobile-setup.sh
 
 - [Adobe Create Cloud](https://creative.adobe.com/products/creative-cloud) - Download & installer for ACC
 - [Sketch](https://www.sketchapp.com/) - Visual design tool
+- [SkyFonts](https://skyfonts.com/) - Font manager for the cloud 
 
 ---
 

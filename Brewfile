@@ -40,6 +40,8 @@ brew "yadm"
 brew "ssh-copy-id"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
+#- [mas](https://github.com/mas-cli/mas) Mac App Store command line interface
+brew "mas"
 
 #- [Docker](https://docker.com) - Docker Community Edition (.app)
 cask "docker"
@@ -65,3 +67,5 @@ cask "time-out"
 cask "notion"
 #- [Slack](https://slack.com) - Chit chat on the internets
 cask "slack"
+#- [JetBrains Toolbox](https://www.jetbrains.com/toolbox/app/) - One stop shopping for the best IDEs
+cask "jetbrains-toolbox"
