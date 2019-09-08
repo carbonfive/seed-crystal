@@ -33,6 +33,7 @@ jobs:
       - run: source $BASH_ENV
       - run: sh -x bootstrap.sh
       - run: sh -x bin/mobile-setup.sh
+      - run: sh -x bin/design-setup.sh
 
 workflows:
   version: 2
