@@ -17,9 +17,9 @@ brew update
 brew bundle
 
 # shellcheck disable=SC2016
-add_line_to_file 'eval "$(rbenv init -)"' ~/.bash_profile
+add_line_to_file 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' ~/.bash_profile
 # shellcheck disable=SC2016
-add_line_to_file 'eval "$(nodenv init -)"' ~/.bash_profile
+add_line_to_file 'if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi' ~/.bash_profile
 
 announce Postgres...
 createuser -s postgres || true
