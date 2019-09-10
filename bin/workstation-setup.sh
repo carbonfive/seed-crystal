@@ -74,7 +74,7 @@ open /Applications/Divvy.app
 open /Applications/Flycut.app
 open /Applications/Muzzle.app
 
-if [ "x$CIRCLECI" == "x" ]
+if [ "$CI" == "true" ]
 then
   warn Logitech Control Center can not be installed under CI
 else
