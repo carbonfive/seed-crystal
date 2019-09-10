@@ -5,6 +5,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
+tap "heroku/brew"
 
 # self-documenting... Lines that begin with `#-` will be injected into the README.md file
 
@@ -42,8 +43,10 @@ brew "yadm"
 brew "ssh-copy-id"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
-#- [mas](https://github.com/mas-cli/mas) Mac App Store command line interface
+#- [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface
 brew "mas"
+#- [heorku](https://devcenter.heroku.com/articles/heroku-cli) - Heroku CLI
+brew "heroku"
 
 #- [Docker](https://docker.com) - Docker Community Edition (.app)
 cask "docker"

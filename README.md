@@ -71,11 +71,12 @@ brew bundle
 - [Divvy](https://mizage.com/divvy/) - Window manager
 - [Docker](https://docker.com) - Docker Community Edition (.app)
 - [Flycut](https://github.com/TermiT/Flycut) - Clipboard manager
+- [heorku](https://devcenter.heroku.com/articles/heroku-cli) - Heroku CLI
 - [Hub](https://github.com/github/hub) - Add GitHub support to git on the command-line
 - [JetBrains Toolbox](https://www.jetbrains.com/toolbox/app/) - One stop shopping for the best IDEs
 - [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake/) - Prevents your Mac from going to sleep.
 - [Logitech Control Center](https://support.logitech.com/en_us/product/3129)
-- [mas](https://github.com/mas-cli/mas) Mac App Store command line interface
+- [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface
 - [Muzzle](https://muzzleapp.com) - -Silence notifications when screen sharing
 - [Notion](https://www.notion.so/product) Our corporate notebook of memories
 - [postgresql](https://postgresql.org) - Object-relational database system
