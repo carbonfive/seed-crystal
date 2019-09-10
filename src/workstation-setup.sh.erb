@@ -21,6 +21,11 @@ add_line_to_file 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' ~
 # shellcheck disable=SC2016
 add_line_to_file 'if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi' ~/.bash_profile
 
+# shellcheck disable=SC2016
+add_line_to_file 'install: --no-rdoc --no-ri --conservative' ~/.gemrc
+# shellcheck disable=SC2016
+add_line_to_file 'update: --no-rdoc --no-ri --conservative' ~/.gemrc
+
 announce Postgres...
 createuser -s postgres || true
 
