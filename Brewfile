@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "homebrew/cask-drivers"
 
 # self-documenting... Lines that begin with `#-` will be injected into the README.md file
 
@@ -69,3 +70,5 @@ cask "notion"
 cask "slack"
 #- [JetBrains Toolbox](https://www.jetbrains.com/toolbox/app/) - One stop shopping for the best IDEs
 cask "jetbrains-toolbox"
+#- [Logitech Control Center](https://support.logitech.com/en_us/product/3129)
+cask "logitech-control-center"
