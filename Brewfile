@@ -72,7 +72,7 @@ cask "slack"
 #- [JetBrains Toolbox](https://www.jetbrains.com/toolbox/app/) - One stop shopping for the best IDEs
 cask "jetbrains-toolbox"
 #- [Logitech Control Center](https://support.logitech.com/en_us/product/3129)
-cask "logitech-control-center"
+# cask "logitech-control-center"
 
 #- Font [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Ralph Levien
 cask "font-inconsolata"

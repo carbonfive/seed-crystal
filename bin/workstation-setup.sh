@@ -8,6 +8,8 @@ setup_color
 
 cache_root_password
 
+add_line_to_file '/usr/local/bin/zsh' /etc/shells root
+
 command_exists brew || {
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
@@ -17,9 +19,14 @@ brew update
 brew bundle
 
 # shellcheck disable=SC2016
-add_line_to_file 'eval "$(rbenv init -)"' ~/.bash_profile
+add_line_to_file 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' ~/.bash_profile
 # shellcheck disable=SC2016
-add_line_to_file 'eval "$(nodenv init -)"' ~/.bash_profile
+add_line_to_file 'if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi' ~/.bash_profile
+
+# shellcheck disable=SC2016
+add_line_to_file 'install: --no-rdoc --no-ri --conservative' ~/.gemrc
+# shellcheck disable=SC2016
+add_line_to_file 'update: --no-rdoc --no-ri --conservative' ~/.gemrc
 
 announce Postgres...
 createuser -s postgres || true
@@ -61,11 +68,13 @@ announce Hiding the dock...
 defaults write com.apple.dock autohide -bool true
 killall Dock
 
-warn Application that need Security/Accessibility permissions...
+warn Launching applications that need Security/Accessibility permissions...
 open /Applications/KeepingYouAwake.app
 open /Applications/Divvy.app
 open /Applications/Flycut.app
 open /Applications/Muzzle.app
+
+sudo brew cask install "logitech-control-center"
 
 announce Installing Oh My zsh
 RUNZSH=no sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

@@ -65,6 +65,8 @@ brew bundle
 ### Core
 
 - [Homebrew](https://brew.sh) - macOS package manager
+- Font [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro) - Mark Simonson
+- Font [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Ralph Levien
 - [CircleCI](https://circleci.com) - Enables you to reproduce the CircleCI environment locally
 - [Divvy](https://mizage.com/divvy/) - Window manager
 - [Docker](https://docker.com) - Docker Community Edition (.app)
@@ -72,6 +74,7 @@ brew bundle
 - [Hub](https://github.com/github/hub) - Add GitHub support to git on the command-line
 - [JetBrains Toolbox](https://www.jetbrains.com/toolbox/app/) - One stop shopping for the best IDEs
 - [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake/) - Prevents your Mac from going to sleep.
+- [Logitech Control Center](https://support.logitech.com/en_us/product/3129)
 - [mas](https://github.com/mas-cli/mas) Mac App Store command line interface
 - [Muzzle](https://muzzleapp.com) - -Silence notifications when screen sharing
 - [Notion](https://www.notion.so/product) Our corporate notebook of memories

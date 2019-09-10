@@ -40,6 +40,7 @@ setup_color() {
 add_line_to_file() {
   line=$1
   file=$2
+  user=$3
 
   [ -f "$file" ] || touch "$file"
 
@@ -49,7 +50,12 @@ add_line_to_file() {
   else
     announce "Adding '$line' to '$file'"
 
-    echo "$line" >> "$file"
+    if [ "$user" == "root" ]
+    then
+      sudo sh -c "echo '$line' >> '$file'"
+    else
+      echo "$line" >> "$file"
+    fi
   fi
 }
 

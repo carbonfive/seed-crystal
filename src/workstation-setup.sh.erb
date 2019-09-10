@@ -8,6 +8,8 @@ setup_color
 
 cache_root_password
 
+add_line_to_file '/usr/local/bin/zsh' /etc/shells root
+
 command_exists brew || {
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
@@ -43,6 +45,8 @@ open /Applications/KeepingYouAwake.app
 open /Applications/Divvy.app
 open /Applications/Flycut.app
 open /Applications/Muzzle.app
+
+sudo brew cask install "logitech-control-center"
 
 announce Installing Oh My zsh
 RUNZSH=no sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
