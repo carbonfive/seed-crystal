@@ -4,6 +4,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
 
 # self-documenting... Lines that begin with `#-` will be injected into the README.md file
 
@@ -72,3 +73,8 @@ cask "slack"
 cask "jetbrains-toolbox"
 #- [Logitech Control Center](https://support.logitech.com/en_us/product/3129)
 cask "logitech-control-center"
+
+#- Font [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Ralph Levien
+cask "font-inconsolata"
+#- Font [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro) - Mark Simonson
+cask "font-anonymous-pro"
