@@ -74,7 +74,12 @@ open /Applications/Divvy.app
 open /Applications/Flycut.app
 open /Applications/Muzzle.app
 
-brew cask install "logitech-control-center"
+if [ "x$CIRCLECI" == "x" ]
+then
+  warn Logitech Control Center can not be installed under CI
+else
+  brew cask install "logitech-control-center"
+fi
 
 announce Installing Oh My zsh
 RUNZSH=no sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
