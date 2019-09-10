@@ -37,8 +37,8 @@ umask g-w,o-w
 
 echo "${BLUE}Cloning CaCO3...${RESET}"
 
-command_exists git || {
-    error "git is not installed"
+command_exists brew || {
+    warn "homebrew is not installed (we need git)"
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew update
     brew install git
