@@ -1,6 +1,6 @@
 # Seed::Crystal
 
-An opinionated workstation configuration tool -- From zero to productive
+An opinionated, _tested_, workstation configuration tool -- From zero to productive
 
 [![CircleCI](https://circleci.com/gh/carbonfive/seed-crystal/tree/master.svg?style=svg)](https://circleci.com/gh/carbonfive/seed-crystal/tree/master)
 
@@ -42,7 +42,7 @@ brew bundle
 
 1. Standard toolsets make it easier for contributors to roll onto a project. What you do on your personal projects is your business, but we are in the business of delivering value to our clients. There shall be no `vim`/`emacs` wars.
 
-2. Default configurations unless there is a really good reason not to follow it. 
+2. Default configurations unless there is a really good reason not to follow it.
 
 3. Up and running *fast*.
 
@@ -97,6 +97,10 @@ brew bundle
 - [Adobe Create Cloud](https://creative.adobe.com/products/creative-cloud) - Download & installer for ACC
 - [Sketch](https://www.sketchapp.com/) - Visual design tool
 - [SkyFonts](https://skyfonts.com/) - Font manager for the cloud 
+
+### Web
+
+- [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/home)
 
 ---
 
