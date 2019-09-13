@@ -68,17 +68,16 @@ announce Hiding the dock...
 defaults write com.apple.dock autohide -bool true
 killall Dock
 
-warn Launching applications that need Security/Accessibility permissions...
-open /Applications/KeepingYouAwake.app
-open /Applications/Divvy.app
-open /Applications/Flycut.app
-open /Applications/Muzzle.app
-
 if [ "$CI" == "true" ]
 then
-  warn Logitech Control Center can not be installed under CI
+  warn Some things can not be tested on CI
 else
   brew cask install "logitech-control-center"
+  warn Launching applications that need Security/Accessibility permissions...
+  open /Applications/KeepingYouAwake.app
+  open /Applications/Divvy.app
+  open /Applications/Flycut.app
+  open /Applications/Muzzle.app
 fi
 
 announce Installing Oh My zsh
