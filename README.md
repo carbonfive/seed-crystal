@@ -1,3 +1,5 @@
+[![A Dark Crystal](https://cdn.pixabay.com/photo/2014/09/08/16/08/star-439295_960_720.jpg)](https://images.app.goo.gl/9GZ6uxdC1vwoSpVf7)
+
 # Seed::Crystal
 
 An opinionated, _tested_, workstation configuration tool -- From zero to productive
