@@ -100,6 +100,13 @@ brew bundle
 - [Sketch](https://www.sketchapp.com/) - Visual design tool
 - [SkyFonts](https://skyfonts.com/) - Font manager for the cloud 
 
+### Java
+
+- [Gradle](https://www.gradle.org/) - Build automation
+- [IntelliJ CE](https://www.jetbrains.com/idea/) - IntelliJ IDEA Community Edition
+- [Java](https://openjdk.java.net/) - Latest Java SDK from OpenJDK
+- [Maven](https://maven.apache.org/) - Java-based project management
+
 ### Web
 
 - [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/home)
