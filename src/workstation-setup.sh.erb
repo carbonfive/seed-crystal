@@ -8,15 +8,8 @@ setup_color
 
 cache_root_password
 
-add_line_to_file '/usr/local/bin/zsh' /etc/shells root
-
-command_exists brew || {
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-}
-
 announce Workstation setup...
-brew update
-brew bundle
+add_line_to_file '/usr/local/bin/zsh' /etc/shells root
 
 # shellcheck disable=SC2016
 add_line_to_file 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' ~/.bash_profile
@@ -24,9 +17,16 @@ add_line_to_file 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' ~
 add_line_to_file 'if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi' ~/.bash_profile
 
 # shellcheck disable=SC2016
-add_line_to_file 'install: --no-rdoc --no-ri --conservative' ~/.gemrc
+add_line_to_file 'install: --no-document --conservative' ~/.gemrc
 # shellcheck disable=SC2016
-add_line_to_file 'update: --no-rdoc --no-ri --conservative' ~/.gemrc
+add_line_to_file 'update: --no-document --conservative' ~/.gemrc
+
+command_exists brew || {
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+}
+
+brew update
+brew bundle
 
 announce Postgres...
 createuser -s postgres || true
