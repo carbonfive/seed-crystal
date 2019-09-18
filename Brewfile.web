@@ -1,2 +1,6 @@
 #- [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/home)
 cask "chromedriver"
+#- [Elixir](https://elixir-lang.org/) - Functional metaprogramming aware language built on Erlang VM
+brew "elixir"
+#- [Erlang](https://www.erlang.org/) - Programming language for highly scalable real-time systems
+brew "erlang"
