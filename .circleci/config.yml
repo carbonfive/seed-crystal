@@ -4,11 +4,11 @@ references:
   restore_homebrew_cache: &restore_homebrew_cache
     restore_cache:
       keys:
-        - v3-homebrew-cache-{{ arch }}-{{ .Branch }}
-        - v3-homebrew-cache-{{ arch }}
+        - v3.1-homebrew-cache-{{ arch }}-{{ .Branch }}
+        - v3.1-homebrew-cache-{{ arch }}
   save_homebrew_cache: &save_homebrew_cache
     save_cache:
-      key: v3-homebrew-cache-{{ arch }}-{{ .Branch }}
+      key: v3.1-homebrew-cache-{{ arch }}-{{ .Branch }}
       paths:
         - /usr/local/Cellar
         - /usr/local/Homebrew
