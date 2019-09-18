@@ -32,8 +32,11 @@ jobs:
       - run: echo "export CHSH=no" >> $BASH_ENV
       - run: source $BASH_ENV
       - run: sh -x bootstrap.sh
-      - run: sh -x bin/mobile-setup.sh
       - run: sh -x bin/design-setup.sh
+      - run: sh -x bin/java-setup.sh
+      - run: sh -x bin/mobile-setup.sh
+      - run: sh -x bin/web-setup.sh
+      - run: sh -x bin/workstation.sh
 
 workflows:
   version: 2
