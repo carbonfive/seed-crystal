@@ -36,7 +36,7 @@ jobs:
       - run: sh -x bin/java-setup.sh
       - run: sh -x bin/mobile-setup.sh
       - run: sh -x bin/web-setup.sh
-      - run: sh -x bin/workstation.sh
+      - run: sh -x bin/workstation-setup.sh
 
 workflows:
   version: 2
