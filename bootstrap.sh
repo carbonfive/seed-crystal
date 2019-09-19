@@ -13,15 +13,21 @@ error() {
     echo "${RED}""Error: $*""${RESET}" >&2
 }
 
+warn() {
+    echo "${YELLOW}""Error: $*""${RESET}" >&2
+}
+
 setup_color() {
     # Only use colors if connected to a terminal
     if [ -t 1 ]; then
         RED=$(printf '\033[31m')
         BLUE=$(printf '\033[34m')
+        YELLOW=$(printf '\033[33m')
         RESET=$(printf '\033[m')
     else
         RED=""
         BLUE=""
+        YELLOW=""
         RESET=""
     fi
 }
