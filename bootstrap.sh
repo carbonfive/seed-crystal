@@ -41,8 +41,6 @@ setup_color
 # precedence over umasks except for filesystems mounted with option "noacl".
 umask g-w,o-w
 
-echo "${BLUE}Cloning CaCO3...${RESET}"
-
 command_exists brew || {
     warn "homebrew is not installed (we need git)"
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -52,10 +50,14 @@ command_exists brew || {
 
 [ -d ~/Documents ] || mkdir -p ~/Documents
 
-git clone --depth=1 https://github.com/carbonfive/seed-crystal.git ~/Documents/seed-crystal || {
-    error "git clone of seed-crystal repo failed"
-    exit 1
-}
+if [ ! -d ~/Documents/seed-crystal ]
+then
+  echo "${BLUE}Cloning seed-crystal...${RESET}"
+  git clone --depth=1 https://github.com/carbonfive/seed-crystal.git ~/Documents/seed-crystal || {
+      error "git clone of seed-crystal repo failed"
+      exit 1
+  }
+fi
 
 cd ~/Documents/seed-crystal
 
