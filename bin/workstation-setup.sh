@@ -75,7 +75,7 @@ else
   brew cask install "logitech-control-center"
   warn Launching applications that need Security/Accessibility permissions...
   open /Applications/KeepingYouAwake.app
-  open /Applications/Divvy.app
+  open /Applications/ShiftIt.app
   open /Applications/Flycut.app
   open /Applications/Muzzle.app
 fi

@@ -52,8 +52,8 @@ brew "heroku"
 cask "docker"
 #- [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake/) - Prevents your Mac from going to sleep.
 cask "keepingyouawake"
-#- [Divvy](https://mizage.com/divvy/) - Window manager
-cask "divvy"
+#- [ShiftIt](https://github.com/fikovnik/ShiftIt/) - Window manager
+cask "shiftit"
 #- [Flycut](https://github.com/TermiT/Flycut) - Clipboard manager
 cask "flycut"
 # Chrome

@@ -70,7 +70,6 @@ brew bundle
 - Font [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro) - Mark Simonson
 - Font [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Ralph Levien
 - [CircleCI](https://circleci.com) - Enables you to reproduce the CircleCI environment locally
-- [Divvy](https://mizage.com/divvy/) - Window manager
 - [Docker](https://docker.com) - Docker Community Edition (.app)
 - [Flycut](https://github.com/TermiT/Flycut) - Clipboard manager
 - [heorku](https://devcenter.heroku.com/articles/heroku-cli) - Heroku CLI
@@ -83,6 +82,7 @@ brew bundle
 - [Notion](https://www.notion.so/product) Our corporate notebook of memories
 - [postgresql](https://postgresql.org) - Object-relational database system
 - [redis](https://redis.org) - Persistent key-value database, with built-in net interface
+- [ShiftIt](https://github.com/fikovnik/ShiftIt/) - Window manager
 - [Slack](https://slack.com) - Chit chat on the internets
 - [Time Out](https://www.dejal.com/timeout/) - Remind yourself to take a break
 - [yarn](https://yarnpkg.com) - JavaScript package manager
