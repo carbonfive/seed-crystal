@@ -12,32 +12,34 @@ An opinionated, _tested_, workstation configuration tool -- From zero to product
 /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/carbonfive/seed-crystal/master/bootstrap.sh)"
 ```
 
-## Updates
-
-```sh
-cd ~/Documents/seed-crystal
-git pull
-sh bin/workstation-setup.sh
-```
-
 ## Opt-ins
 
-The base install is just enough to get you productive without too much ceremony, but what if you want to do mobile work? Or design work?
+The base install is just enough to get you productive without too much ceremony, but what if you want to do mobile work?
+Or design work? Run one or more these setup scripts.
 
 ```sh
 cd ~/Documents/seed-crystal
-sh bin/mobile-setup.sh
 sh bin/design-setup.sh
+sh bin/java-setup.sh
+sh bin/mobile-setup.sh
+sh bin/web-setup.sh
 ```
 
 ## Software Updates
 
-Keeping your tools up-to-date is an every growing time suck. Not any more.
+Seed::Crystal remembers which set up packages you've already installed, and if you re-run the `bootstrap.sh` script,
+then it will re-run all of the scripts that you've used before.
 
 ```sh
-cd ~/Documents/seed-crystal
-brew bundle check --verbose
-brew bundle
+$ cd ~/Documents/seed-crystal
+$ git pull
+$ sh bootstrap.sh
+Notice: This workstation has already been seeded. Re-running setup scripts.
+Notice:
+     1  bin/workstation-setup.sh
+     2  bin/web-setup.sh
+     3  bin/design-setup.sh
+...
 ```
 
 ## Core Values

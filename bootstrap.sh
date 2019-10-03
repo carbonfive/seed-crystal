@@ -17,6 +17,10 @@ warn() {
     echo "${YELLOW}""Error: $*""${RESET}" >&2
 }
 
+announce() {
+    echo "${BLUE}""Notice: $*""${RESET}" >&2
+}
+
 setup_color() {
     # Only use colors if connected to a terminal
     if [ -t 1 ]; then
@@ -48,11 +52,22 @@ command_exists brew || {
     brew install git
 }
 
+# shellcheck source=/dev/null
+if [ -f ~/.seed-crystal/setup.sh ]; then
+  announce "This workstation has already been seeded. Re-running setup scripts."
+  cd ~/Documents/seed-crystal/
+  announce "\n$(cat -n ~/.seed-crystal/setup.sh)"
+  source ~/.seed-crystal/setup.sh
+  exit
+fi
+
+[ -d ~/.seed-crystal ] || mkdir -p ~/.seed-crystal
+
 [ -d ~/Documents ] || mkdir -p ~/Documents
 
 if [ ! -d ~/Documents/seed-crystal ]
 then
-  echo "${BLUE}Cloning seed-crystal...${RESET}"
+  announce "Cloning seed-crystal..."
   git clone --depth=1 https://github.com/carbonfive/seed-crystal.git ~/Documents/seed-crystal || {
       error "git clone of seed-crystal repo failed"
       exit 1

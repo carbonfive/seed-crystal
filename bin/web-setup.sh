@@ -8,4 +8,6 @@ setup_color
 
 cache_root_password
 
+add_line_to_file 'bin/web-setup.sh' ~/.seed-crystal/setup.sh
+
 brew bundle --file=Brewfile.web

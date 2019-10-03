@@ -8,6 +8,8 @@ setup_color
 
 cache_root_password
 
+add_line_to_file 'bin/mobile-setup.sh' ~/.seed-crystal/setup.sh
+
 brew bundle --file=Brewfile.mobile
 
 # shellcheck disable=SC2016
