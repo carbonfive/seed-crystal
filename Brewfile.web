@@ -4,3 +4,5 @@ cask "chromedriver"
 brew "elixir"
 #- [Erlang](https://www.erlang.org/) - Programming language for highly scalable real-time systems
 brew "erlang"
+#- [Firefox Quantum Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) - Super cool web dev tools!
+cask "firefox-developer-edition"

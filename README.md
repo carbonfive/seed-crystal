@@ -112,6 +112,7 @@ brew bundle
 - [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/home)
 - [Elixir](https://elixir-lang.org/) - Functional metaprogramming aware language built on Erlang VM
 - [Erlang](https://www.erlang.org/) - Programming language for highly scalable real-time systems
+- [Firefox Quantum Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) - Super cool web dev tools!
 
 ---
 
