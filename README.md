@@ -89,6 +89,7 @@ Notice:
 - [Time Out](https://www.dejal.com/timeout/) - Remind yourself to take a break
 - [yarn](https://yarnpkg.com) - JavaScript package manager
 - [Yet Another Dotfiles Manager](https://yadm.io)
+- [Zoom US](https://www.zoom.us/) - We default to Zoom for video conferencing
 - [zsh](https://zsh.sourceforge.net) - UNIX shell (command interpreter)
 
 ### Mobile

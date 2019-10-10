@@ -76,6 +76,8 @@ cask "slack"
 cask "jetbrains-toolbox"
 #- [Logitech Control Center](https://support.logitech.com/en_us/product/3129)
 # cask "logitech-control-center"
+#- [Zoom US](https://www.zoom.us/) - We default to Zoom for video conferencing
+cask "zoomus"
 
 #- Font [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Ralph Levien
 cask "font-inconsolata"
