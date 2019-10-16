@@ -80,6 +80,8 @@ cask "jetbrains-toolbox"
 cask "zoomus"
 #- [Calibre](https://calibre-ebook.com) - One stop E-book manager
 cask "calibre"
+#- [Google Drive](https://cloud.google.com/drive-enterprise)
+cask "google-drive-file-stream"
 
 #- Font [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Ralph Levien
 cask "font-inconsolata"

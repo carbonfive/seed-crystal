@@ -75,6 +75,7 @@ Notice:
 - [CircleCI](https://circleci.com) - Enables you to reproduce the CircleCI environment locally
 - [Docker](https://docker.com) - Docker Community Edition (.app)
 - [Flycut](https://github.com/TermiT/Flycut) - Clipboard manager
+- [Google Drive](https://cloud.google.com/drive-enterprise)
 - [heorku](https://devcenter.heroku.com/articles/heroku-cli) - Heroku CLI
 - [Hub](https://github.com/github/hub) - Add GitHub support to git on the command-line
 - [JetBrains Toolbox](https://www.jetbrains.com/toolbox/app/) - One stop shopping for the best IDEs
