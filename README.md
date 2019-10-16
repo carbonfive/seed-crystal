@@ -71,6 +71,7 @@ Notice:
 - [Homebrew](https://brew.sh) - macOS package manager
 - Font [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro) - Mark Simonson
 - Font [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Ralph Levien
+- [Calibre](https://calibre-ebook.com) - One stop E-book manager
 - [CircleCI](https://circleci.com) - Enables you to reproduce the CircleCI environment locally
 - [Docker](https://docker.com) - Docker Community Edition (.app)
 - [Flycut](https://github.com/TermiT/Flycut) - Clipboard manager

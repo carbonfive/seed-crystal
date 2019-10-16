@@ -78,6 +78,8 @@ cask "jetbrains-toolbox"
 # cask "logitech-control-center"
 #- [Zoom US](https://www.zoom.us/) - We default to Zoom for video conferencing
 cask "zoomus"
+#- [Calibre](https://calibre-ebook.com) - One stop E-book manager
+cask "calibre"
 
 #- Font [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Ralph Levien
 cask "font-inconsolata"
