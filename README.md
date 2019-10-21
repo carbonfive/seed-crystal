@@ -86,6 +86,7 @@ Notice:
 - [Muzzle](https://muzzleapp.com) - -Silence notifications when screen sharing
 - [Notion](https://www.notion.so/product) Our corporate notebook of memories
 - [postgresql](https://postgresql.org) - Object-relational database system
+- [rbenv](https://github.com/rbenv/rbenv#readme) - Ruby version manager
 - [redis](https://redis.org) - Persistent key-value database, with built-in net interface
 - [ShiftIt](https://github.com/fikovnik/ShiftIt/) - Window manager
 - [Slack](https://slack.com) - Chit chat on the internets
