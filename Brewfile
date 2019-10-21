@@ -87,3 +87,5 @@ cask "google-drive-file-stream"
 cask "font-inconsolata"
 #- Font [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro) - Mark Simonson
 cask "font-anonymous-pro"
+#- Font [Cascadia](https://devblogs.microsoft.com/commandline/cascadia-code/) - This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.
+cask "font-cascadia"

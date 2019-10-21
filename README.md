@@ -70,6 +70,7 @@ Notice:
 
 - [Homebrew](https://brew.sh) - macOS package manager
 - Font [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro) - Mark Simonson
+- Font [Cascadia](https://devblogs.microsoft.com/commandline/cascadia-code/) - This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.
 - Font [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Ralph Levien
 - [Calibre](https://calibre-ebook.com) - One stop E-book manager
 - [CircleCI](https://circleci.com) - Enables you to reproduce the CircleCI environment locally
