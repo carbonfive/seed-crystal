@@ -31,6 +31,9 @@ command_exists brew || {
 brew update
 brew bundle
 
+mkdir -p ~/.rbenv
+add_line_to_file 'bundler' ~/.rbenv/default-gems
+
 announce Postgres...
 createuser -s postgres || true
 
