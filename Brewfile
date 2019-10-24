@@ -62,7 +62,7 @@ brew "watch"
 #- [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface
 brew "mas"
 
-#- [heorku](https://devcenter.heroku.com/articles/heroku-cli) - Heroku CLI
+#- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - our default deployment platform
 brew "heroku"
 
 #- [Docker](https://docker.com) - Docker Community Edition (.app)
