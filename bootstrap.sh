@@ -53,7 +53,7 @@ command_exists brew || {
 }
 
 # Remove deprecated tap
-brew untap caskroom/versions
+brew untap caskroom/versions || true
 
 # shellcheck source=/dev/null
 if [ -f ~/.seed-crystal/setup.sh ]; then
