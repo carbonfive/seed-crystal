@@ -79,4 +79,4 @@ fi
 
 cd ~/Documents/seed-crystal
 
-sh bin/workstation-setup.sh
+caffeinate -i "sh bin/workstation-setup.sh"
