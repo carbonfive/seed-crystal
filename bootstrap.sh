@@ -52,6 +52,9 @@ command_exists brew || {
     brew install git
 }
 
+# Remove deprecated tap
+brew untap caskroom/versions
+
 # shellcheck source=/dev/null
 if [ -f ~/.seed-crystal/setup.sh ]; then
   announce "This workstation has already been seeded. Re-running setup scripts."
