@@ -17,7 +17,7 @@ references:
 jobs:
   test:
     macos:
-      xcode: "9.3.1"
+      xcode: "10.3.0"
 
     steps:
       - checkout
