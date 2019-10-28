@@ -24,6 +24,11 @@ add_line_to_file 'update: --no-document --conservative' ~/.gemrc
 mkdir -p ~/.rbenv
 add_line_to_file 'bundler' ~/.rbenv/default-gems
 
+# Remove deprecated tap
+brew untap caskroom/versions > /dev/null 2>&1 || true
+
+caffeinate -i brew bundle --file=Brewfile.eng
+
 announce Postgres...
 createuser -s postgres || true
 
@@ -59,8 +64,3 @@ announce Visual Studio Code extensions...
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension sysoev.language-stylus
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension waderyan.gitblame
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension xabikos.ReactSnippets
-
-# Remove deprecated tap
-brew untap caskroom/versions > /dev/null 2>&1 || true
-
-caffeinate -i brew bundle --file=Brewfile.eng
