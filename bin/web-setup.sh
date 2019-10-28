@@ -10,4 +10,7 @@ cache_root_password
 
 add_line_to_file 'bin/web-setup.sh' ~/.seed-crystal/setup.sh
 
+# Remove deprecated tap
+brew untap caskroom/versions || true
+
 brew bundle --file=Brewfile.web

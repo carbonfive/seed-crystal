@@ -15,11 +15,12 @@ An opinionated, _tested_, workstation configuration tool -- From zero to product
 ## Opt-ins
 
 The base install is just enough to get you productive without too much ceremony, but what if you want to do mobile work?
-Or design work? Run one or more these setup scripts.
+Or design work? Run one or more these setup scripts. The baseline set up is `bin/workstation-setup.sh`
 
 ```sh
 cd ~/Documents/seed-crystal
 sh bin/design-setup.sh
+sh bin/eng-setup.sh
 sh bin/java-setup.sh
 sh bin/mobile-setup.sh
 sh bin/web-setup.sh
@@ -69,37 +70,19 @@ Notice:
 ### Core
 
 - [Homebrew](https://brew.sh) - macOS package manager
-- Font [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro) - Mark Simonson
-- Font [Cascadia](https://devblogs.microsoft.com/commandline/cascadia-code/) - This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.
-- Font [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Ralph Levien
 - [Calibre](https://calibre-ebook.com) - One stop E-book manager
-- [CircleCI](https://circleci.com) - Enables you to reproduce the CircleCI environment locally
-- [Docker](https://docker.com) - Docker Community Edition (.app)
 - [Flycut](https://github.com/TermiT/Flycut) - Clipboard manager
 - [Google Drive](https://cloud.google.com/drive-enterprise)
-- [heorku](https://devcenter.heroku.com/articles/heroku-cli) - Heroku CLI
-- [Hub](https://github.com/github/hub) - Add GitHub support to git on the command-line
-- [JetBrains Toolbox](https://www.jetbrains.com/toolbox/app/) - One stop shopping for the best IDEs
 - [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake/) - Prevents your Mac from going to sleep.
 - [Logitech Control Center](https://support.logitech.com/en_us/product/3129)
 - [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface
-- [Muzzle](https://muzzleapp.com) - -Silence notifications when screen sharing
-- [Notion](https://www.notion.so/product) Our corporate notebook of memories
-- [postgresql](https://postgresql.org) - Object-relational database system
-- [rbenv](https://github.com/rbenv/rbenv#readme) - Ruby version manager
-- [redis](https://redis.org) - Persistent key-value database, with built-in net interface
+- [Muzzle](https://muzzleapp.com) - Silence notifications when screen sharing
+- [Notion](https://www.notion.so/product) - Our corporate notebook of memories
 - [ShiftIt](https://github.com/fikovnik/ShiftIt/) - Window manager
-- [Slack](https://slack.com) - Chit chat on the internets
+- [Slack](https://slack.com) - Chit chats on the internets
 - [Time Out](https://www.dejal.com/timeout/) - Remind yourself to take a break
-- [yarn](https://yarnpkg.com) - JavaScript package manager
 - [Yet Another Dotfiles Manager](https://yadm.io)
 - [Zoom US](https://www.zoom.us/) - We default to Zoom for video conferencing
-- [zsh](https://zsh.sourceforge.net) - UNIX shell (command interpreter)
-
-### Mobile
-
-- [AdoptOpenJDK 8](https://openjdk.java.net/projects/jdk8/) - Open source replace for Java8 (for Android)
-- [Android Studio](https://developer.android.com/studio) - Android's IDE, built on the Eclipse IDE
 
 ### Design
 
@@ -107,12 +90,34 @@ Notice:
 - [Sketch](https://www.sketchapp.com/) - Visual design tool
 - [SkyFonts](https://skyfonts.com/) - Font manager for the cloud 
 
+### Engineering
+
+- Font [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro) - Mark Simonson
+- Font [Cascadia](https://devblogs.microsoft.com/commandline/cascadia-code/) - This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.
+- Font [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Ralph Levien
+- [CircleCI](https://circleci.com) - Enables you to reproduce the CircleCI environment locally
+- [Docker](https://docker.com) - Docker Community Edition (.app)
+- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - our default deployment platform
+- [Hub](https://github.com/github/hub) - Add GitHub support to git on the command-line
+- [JetBrains Toolbox](https://www.jetbrains.com/toolbox/app/) - One stop shopping for the best IDEs
+- [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface
+- [postgresql](https://postgresql.org) - Object-relational database system
+- [rbenv](https://github.com/rbenv/rbenv#readme) - Ruby version manager
+- [redis](https://redis.org) - Persistent key-value database, with built-in net interface
+- [yarn](https://yarnpkg.com) - JavaScript package manager
+- [Zoom US](https://www.zoom.us/) - We default to Zoom for video conferencing
+
 ### Java
 
 - [Gradle](https://www.gradle.org/) - Build automation
 - [IntelliJ CE](https://www.jetbrains.com/idea/) - IntelliJ IDEA Community Edition
 - [Java](https://openjdk.java.net/) - Latest Java SDK from OpenJDK
 - [Maven](https://maven.apache.org/) - Java-based project management
+
+### Mobile
+
+- [AdoptOpenJDK 8](https://openjdk.java.net/projects/jdk8/) - Open source replace for Java8 (for Android)
+- [Android Studio](https://developer.android.com/studio) - Android's IDE, built on the Eclipse IDE
 
 ### Web
 

@@ -15,11 +15,12 @@ An opinionated, _tested_, workstation configuration tool -- From zero to product
 ## Opt-ins
 
 The base install is just enough to get you productive without too much ceremony, but what if you want to do mobile work?
-Or design work? Run one or more these setup scripts.
+Or design work? Run one or more these setup scripts. The baseline set up is `bin/workstation-setup.sh`
 
 ```sh
 cd ~/Documents/seed-crystal
 sh bin/design-setup.sh
+sh bin/eng-setup.sh
 sh bin/java-setup.sh
 sh bin/mobile-setup.sh
 sh bin/web-setup.sh
@@ -69,19 +70,23 @@ Notice:
 ### Core
 
 - [Homebrew](https://brew.sh) - macOS package manager
-<%= view_data.homebrew_packages -%>
-
-### Mobile
-
-<%= view_data.mobile_packages -%>
+<%= view_data.core_packages -%>
 
 ### Design
 
 <%= view_data.design_packages -%>
 
+### Engineering
+
+<%= view_data.eng_packages -%>
+
 ### Java
 
 <%= view_data.java_packages -%>
+
+### Mobile
+
+<%= view_data.mobile_packages -%>
 
 ### Web
 
