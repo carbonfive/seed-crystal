@@ -11,17 +11,16 @@ add_line_to_file 'bin/workstation-setup.sh' ~/.seed-crystal/setup.sh
 
 announce Workstation setup...
 
-# Remove deprecated tap
-brew untap caskroom/versions || true
-
 add_line_to_file '/usr/local/bin/zsh' /etc/shells root
 
 command_exists brew || {
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
-brew update
-brew bundle
+# Remove deprecated tap
+brew untap caskroom/versions > /dev/null 2>&1 || true
+
+caffeinate -i brew bundle
 
 announce Hiding the dock...
 defaults write com.apple.dock autohide -bool true

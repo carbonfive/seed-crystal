@@ -42,6 +42,8 @@ add_line_to_file() {
   file=$2
   user=$3
 
+  mkdir -p "$(dirname "$file")"
+
   [ -f "$file" ] || touch "$file"
 
   if grep --fixed-strings --line-regexp --quiet "$line" "$file"

@@ -52,9 +52,6 @@ command_exists brew || {
     brew install git
 }
 
-# Remove deprecated tap
-brew untap caskroom/versions || true
-
 # shellcheck source=/dev/null
 if [ -f ~/.seed-crystal/setup.sh ]; then
   announce "This workstation has already been seeded. Re-running setup scripts."
@@ -64,9 +61,9 @@ if [ -f ~/.seed-crystal/setup.sh ]; then
   exit
 fi
 
-[ -d ~/.seed-crystal ] || mkdir -p ~/.seed-crystal
+mkdir -p ~/.seed-crystal
 
-[ -d ~/Documents ] || mkdir -p ~/Documents
+mkdir -p ~/Documents
 
 if [ ! -d ~/Documents/seed-crystal ]
 then
@@ -79,4 +76,4 @@ fi
 
 cd ~/Documents/seed-crystal
 
-caffeinate -i bin/workstation-setup.sh
+bin/workstation-setup.sh
