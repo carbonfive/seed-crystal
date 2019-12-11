@@ -76,3 +76,7 @@ cask "font-anonymous-pro"
 
 #- Font [Cascadia](https://devblogs.microsoft.com/commandline/cascadia-code/) - This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.
 cask "font-cascadia"
+
+#- [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) - A code searching tool similar to ack (and grep), with a focus on speed.
+brew "the_silver_searcher"
+
