@@ -156,6 +156,6 @@ Everyone interacting in the Seed::Crystal project’s codebases, issue trackers,
 - https://github.com/thoughtbot/laptop
 - https://github.com/pivotal/workstation-setup
 - https://github.com/pivotal-sprout/sprout-wrap
-- https://github.com/splith/macOS
+- https://github.com/spilth/macOS
 - https://github.com/robbyrussell/oh-my-zsh
 - ... and many many others ...
