@@ -2,24 +2,24 @@
   "entries": {
     "tap": {
       "homebrew/core": {
-        "revision": "263583d8abd21018855648f700dbde0c64f64df7"
+        "revision": "a30b2a4a27661736598e2e9964cee741dbd6b293"
       },
       "homebrew/cask": {
-        "revision": "816769cfd80d3677dafd7d9379c78011e0dc1ce8"
+        "revision": "fb2668c6db156dbecef215732a7838d737ea9fc8"
       },
       "homebrew/bundle": {
-        "revision": "2efa0de33f2885bfd567ba4fdb1ab91f1be8d06c"
+        "revision": "865ec948c2da02fe9c7bedd669571f7a012e1ace"
       },
       "homebrew/cask-versions": {
-        "revision": "b8cbce7ad5674b6b99a464af319209ea4e665172"
+        "revision": "b23a654b580fca0a0cbcf9039dd90aa1750b4ac8"
       },
       "homebrew/cask-drivers": {
-        "revision": "fb94fdf1fa594bd5cedee22f6bd3daefd8a0242a"
+        "revision": "a402baa0923936e3d7a642beacacce85b9f90922"
       }
     },
     "brew": {
       "yadm": {
-        "version": "2.1.0",
+        "version": "2.3.0",
         "bottle": false
       },
       "ssh-copy-id": {
@@ -50,52 +50,88 @@
     },
     "cask": {
       "keepingyouawake": {
-        "version": "1.5.0"
+        "version": "1.5.0",
+        "options": {
+          "full_name": "keepingyouawake"
+        }
       },
       "shiftit": {
-        "version": "1.6.6"
+        "version": "1.6.6",
+        "options": {
+          "full_name": "shiftit"
+        }
       },
       "flycut": {
-        "version": "1.8.2"
+        "version": "1.9.4",
+        "options": {
+          "full_name": "flycut"
+        }
       },
       "google-chrome": {
-        "version": "78.0.3904.108"
+        "version": "78.0.3904.108",
+        "options": {
+          "full_name": "google-chrome"
+        }
       },
       "firefox": {
-        "version": "71.0"
+        "version": "71.0",
+        "options": {
+          "full_name": "firefox"
+        }
       },
       "muzzle": {
-        "version": "1.5,304"
+        "version": "1.5,304",
+        "options": {
+          "full_name": "muzzle"
+        }
       },
       "time-out": {
-        "version": "2.6.1"
+        "version": "2.6.1",
+        "options": {
+          "full_name": "time-out"
+        }
       },
       "notion": {
-        "version": "2.0.1"
+        "version": "2.0.5",
+        "options": {
+          "full_name": "notion"
+        }
       },
       "slack": {
-        "version": "4.1.2"
+        "version": "4.1.2",
+        "options": {
+          "full_name": "slack"
+        }
       },
       "zoomus": {
-        "version": "4.6.13614.1202"
+        "version": "4.6.13614.1202",
+        "options": {
+          "full_name": "zoomus"
+        }
       },
       "calibre": {
-        "version": "4.5.0"
+        "version": "4.9.1",
+        "options": {
+          "full_name": "calibre"
+        }
       },
       "google-drive-file-stream": {
-        "version": "latest"
+        "version": "latest",
+        "options": {
+          "full_name": "google-drive-file-stream"
+        }
       }
     }
   },
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.2.0",
+        "HOMEBREW_VERSION": "2.2.5",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "263583d8abd21018855648f700dbde0c64f64df7",
-        "CLT": "11.2.0.0.1.1571444319",
-        "Xcode": "11.2.1",
-        "macOS": "10.15.1"
+        "Homebrew/homebrew-core": "a30b2a4a27661736598e2e9964cee741dbd6b293",
+        "CLT": "11.3.1.0.1.1576735732",
+        "Xcode": "11.3.1",
+        "macOS": "10.15.3"
       }
     }
   }
