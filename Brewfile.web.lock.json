@@ -1,0 +1,68 @@
+{
+  "entries": {
+    "cask": {
+      "chromedriver": {
+        "version": "78.0.3904.105"
+      },
+      "firefox-developer-edition": {
+        "version": "latest"
+      }
+    },
+    "brew": {
+      "elixir": {
+        "version": "1.9.4",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/elixir-1.9.4.catalina.bottle.tar.gz",
+              "sha256": "cc27b1d278293c48c4ffaa8c845a1c0b3dffc346e3de3fcab5f38f0468d12a9c"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/elixir-1.9.4.mojave.bottle.tar.gz",
+              "sha256": "b265e0fa289d4e0bdd6d3c5833804410094b0e92b50657b151dbad7ba0427ee7"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/elixir-1.9.4.high_sierra.bottle.tar.gz",
+              "sha256": "53e9755a828a0f7f6cf5abcd3d72cb74cecd90ad1cccc552dcbd34b03e68ace8"
+            }
+          }
+        }
+      },
+      "erlang": {
+        "version": "22.1.8",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/erlang-22.1.8.catalina.bottle.tar.gz",
+              "sha256": "f7c9b0d93f30d0f0ee2b311b7dacd3967c6065ebd2a3eea9b6ae31dc894ab9b6"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/erlang-22.1.8.mojave.bottle.tar.gz",
+              "sha256": "bed8be359fa328bf86d1813c036d82d2665844ebb6425b3bd0335c349a3368a5"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/erlang-22.1.8.high_sierra.bottle.tar.gz",
+              "sha256": "0e3a573fe84527305a0859a812236eaae6b32aa6ff1c863a9425bd246efee794"
+            }
+          }
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "2.2.0",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "263583d8abd21018855648f700dbde0c64f64df7",
+        "CLT": "11.2.0.0.1.1571444319",
+        "Xcode": "11.2.1",
+        "macOS": "10.15.1"
+      }
+    }
+  }
+}

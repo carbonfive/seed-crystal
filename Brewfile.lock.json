@@ -1,0 +1,102 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/core": {
+        "revision": "263583d8abd21018855648f700dbde0c64f64df7"
+      },
+      "homebrew/cask": {
+        "revision": "816769cfd80d3677dafd7d9379c78011e0dc1ce8"
+      },
+      "homebrew/bundle": {
+        "revision": "2efa0de33f2885bfd567ba4fdb1ab91f1be8d06c"
+      },
+      "homebrew/cask-versions": {
+        "revision": "b8cbce7ad5674b6b99a464af319209ea4e665172"
+      },
+      "homebrew/cask-drivers": {
+        "revision": "fb94fdf1fa594bd5cedee22f6bd3daefd8a0242a"
+      }
+    },
+    "brew": {
+      "yadm": {
+        "version": "2.1.0",
+        "bottle": false
+      },
+      "ssh-copy-id": {
+        "version": "8.1p1",
+        "bottle": false
+      },
+      "mas": {
+        "version": "1.6.3",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/mas-1.6.3.catalina.bottle.tar.gz",
+              "sha256": "2069b8c1c1a64c2fb91cc1c25ab9c9890c61f2182224b9e0605a35a151bb85bd"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/mas-1.6.3.mojave.bottle.tar.gz",
+              "sha256": "3dd5a50b551a37c164c31375cc8498ba870e29e50086bd5c4c294bc26708a6d2"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/mas-1.6.3.high_sierra.bottle.tar.gz",
+              "sha256": "a0d1e45203448c08420c3eab2d40ef957fd22c8e40fbeb067bc7bffe4f08dfe2"
+            }
+          }
+        }
+      }
+    },
+    "cask": {
+      "keepingyouawake": {
+        "version": "1.5.0"
+      },
+      "shiftit": {
+        "version": "1.6.6"
+      },
+      "flycut": {
+        "version": "1.8.2"
+      },
+      "google-chrome": {
+        "version": "78.0.3904.108"
+      },
+      "firefox": {
+        "version": "71.0"
+      },
+      "muzzle": {
+        "version": "1.5,304"
+      },
+      "time-out": {
+        "version": "2.6.1"
+      },
+      "notion": {
+        "version": "2.0.1"
+      },
+      "slack": {
+        "version": "4.1.2"
+      },
+      "zoomus": {
+        "version": "4.6.13614.1202"
+      },
+      "calibre": {
+        "version": "4.5.0"
+      },
+      "google-drive-file-stream": {
+        "version": "latest"
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "2.2.0",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "263583d8abd21018855648f700dbde0c64f64df7",
+        "CLT": "11.2.0.0.1.1571444319",
+        "Xcode": "11.2.1",
+        "macOS": "10.15.1"
+      }
+    }
+  }
+}
