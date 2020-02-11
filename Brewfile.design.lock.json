@@ -1,0 +1,36 @@
+{
+  "entries": {
+    "cask": {
+      "sketch": {
+        "version": "62-91390",
+        "options": {
+          "full_name": "sketch"
+        }
+      },
+      "adobe-creative-cloud": {
+        "version": "latest",
+        "options": {
+          "full_name": "adobe-creative-cloud"
+        }
+      },
+      "skyfonts": {
+        "version": "5.9.5.5",
+        "options": {
+          "full_name": "skyfonts"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "2.2.5",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "a30b2a4a27661736598e2e9964cee741dbd6b293",
+        "CLT": "11.3.1.0.1.1576735732",
+        "Xcode": "11.3.1",
+        "macOS": "10.15.3"
+      }
+    }
+  }
+}

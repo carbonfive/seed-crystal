@@ -1,0 +1,35 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/cask-versions": {
+        "revision": "b23a654b580fca0a0cbcf9039dd90aa1750b4ac8"
+      }
+    },
+    "cask": {
+      "adoptopenjdk8": {
+        "version": "8,242:b08",
+        "options": {
+          "full_name": "adoptopenjdk8"
+        }
+      },
+      "android-studio": {
+        "version": "3.5.3.0,191.6010548",
+        "options": {
+          "full_name": "android-studio"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "2.2.5",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "a30b2a4a27661736598e2e9964cee741dbd6b293",
+        "CLT": "11.3.1.0.1.1576735732",
+        "Xcode": "11.3.1",
+        "macOS": "10.15.3"
+      }
+    }
+  }
+}
