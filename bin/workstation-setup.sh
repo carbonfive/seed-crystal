@@ -30,7 +30,7 @@ if [ "$CI" == "true" ]
 then
   warn Some things can not be tested on CI
 else
-  brew cask install "logitech-control-center"
+  echo brew cask install "logitech-control-center"
 fi
 
 announce Installing Oh My zsh
