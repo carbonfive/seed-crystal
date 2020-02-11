@@ -20,7 +20,7 @@ command_exists brew || {
 # Remove deprecated tap
 brew untap caskroom/versions > /dev/null 2>&1 || true
 
-caffeinate -i brew bundle
+caffeinate -i brew bundle --file=Brewfile.workstation || true
 
 announce Hiding the dock...
 defaults write com.apple.dock autohide -bool true

@@ -17,4 +17,4 @@ add_line_to_file 'export JAVA_HOME=$(/usr/libexec/java_home)' ~/.bash_profile
 # Remove deprecated tap
 brew untap caskroom/versions > /dev/null 2>&1 || true
 
-caffeinate -i brew bundle --file=Brewfile.java
+caffeinate -i brew bundle --file=Brewfile.java || true

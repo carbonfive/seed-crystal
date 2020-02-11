@@ -13,4 +13,4 @@ add_line_to_file 'bin/web-setup.sh' ~/.seed-crystal/setup.sh
 # Remove deprecated tap
 brew untap caskroom/versions > /dev/null 2>&1 || true
 
-caffeinate -i brew bundle --file=Brewfile.web
+caffeinate -i brew bundle --file=Brewfile.web || true

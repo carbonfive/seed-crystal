@@ -13,4 +13,4 @@ add_line_to_file 'bin/design-setup.sh' ~/.seed-crystal/setup.sh
 # Remove deprecated tap
 brew untap caskroom/versions > /dev/null 2>&1 || true
 
-caffeinate -i brew bundle --file=Brewfile.design
+caffeinate -i brew bundle --file=Brewfile.design || true

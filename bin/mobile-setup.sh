@@ -13,7 +13,7 @@ add_line_to_file 'bin/mobile-setup.sh' ~/.seed-crystal/setup.sh
 # Remove deprecated tap
 brew untap caskroom/versions > /dev/null 2>&1 || true
 
-caffeinate -i brew bundle --file=Brewfile.mobile
+caffeinate -i brew bundle --file=Brewfile.mobile || true
 
 # shellcheck disable=SC2016
 add_line_to_file 'export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"' ~/.bash_profile

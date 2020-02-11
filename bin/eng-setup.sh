@@ -27,7 +27,7 @@ add_line_to_file 'bundler' ~/.rbenv/default-gems
 # Remove deprecated tap
 brew untap caskroom/versions > /dev/null 2>&1 || true
 
-caffeinate -i brew bundle --file=Brewfile.eng
+caffeinate -i brew bundle --file=Brewfile.eng || true
 
 announce Postgres...
 createuser -s postgres || true
